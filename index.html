@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <link rel="icon" href="photo/p.jpg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <meta charset="UTF-8" />
+    <script src="INDEX.JS"></script>
+    <title>puhrum</title>
+    <!-- مهم جدًا للـ Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+
+<body>
+    <!-- الهيدر المُصحح -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+              <h1>puhrum</h1>
+            </div>
+            <nav class="nav">
+                <!-- Desktop Menu -->
+                <div class="nav-desktop">
+                    <a href="#home" class="nav-link active">ترفيه</a>
+                    <a href="#culture" class="nav-link">ثقافة</a>
+                    <a href="#tech" class="nav-link">احداث جامعية</a>
+                    <a href="#art" class="nav-link">العلوم والتكنولوجيا</a>
+                    <a href="#art" class="nav-link">وجهات واراء </a>
+                </div>
+                
+                <!-- Hamburger Button - النسخة السومرية -->
+<div class="hamburger" id="hamburgerBtn">
+    <span></span>
+    <span></span>
+    <span></span>
+    <div class="cuneiform-icon">𒀀</div> <!-- حرف سومري أسطوري -->
+</div>
+                
+<!-- Mobile Menu السومري -->
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#articles" class="nav-link">
+        <i class="fas fa-home"></i>
+        <span>الرئيسية</span>
+    </a>
+    <a href="#articles" class="nav-link">
+        <i class="fas fa-book-open"></i>
+        <span>ثقافة</span>
+    </a>
+    <a href="#articles" class="nav-link">
+        <i class="fas fa-graduation-cap"></i>
+        <span>أحداث جامعية</span>
+    </a>
+    <a href="#articles" class="nav-link">
+        <i class="fas fa-microchip"></i>
+        <span>العلوم والتكنولوجيا</span>
+    </a>
+    <a href="#articles" class="nav-link">
+        <i class="fas fa-comments"></i>
+        <span>وجهات وآراء</span>
+    </a>
+</div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- الهوم بيج التعريفي -->
+    <section class="hero">
+        <!-- خلفية سومرية متحركة -->
+<div class="cuneiform-bg">
+    <div class="cuneiform-particle" data-char="𒀀">𒀀</div>
+    <div class="cuneiform-particle" data-char="𒁹">𒁹</div>
+    <div class="cuneiform-particle" data-char="𒂍">𒂍</div>
+    <div class="cuneiform-particle" data-char="𒀭">𒀭</div>
+    <div class="cuneiform-particle" data-char="𒈗">𒈗</div>
+    <div class="cuneiform-particle" data-char="𒌋">𒌋</div>
+    <div class="cuneiform-particle" data-char="𒆠">𒆠</div>
+</div>
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <h1>جريدة <span>طلابية</span><br>بصوت مختلف !</h1>
+                <p class="hero-desc">
+                  نهدف الى نقل الحقيقة بمصداقية وتسليط الضوء على  المجتمع.
+                </p>
+         <div class="btns">
+ <a href="#articles" class="cta-btn">
+                    <i class="fas fa-newspaper"></i>
+                    مقالات  
+                </a>
+                                <a href="#articles" class="cta-btn" style="color: #fc0000;">
+                    <i class="fa-regular fa-file-lines"></i>
+                     الجريدة
+                </a>
+         </div>
+            </div>
+        </div>
+    </section>
+
+<!-- قسم المقالات الخارق -->
+<section id="articles" class="articles-section">
+    <div class="container">
+        <!-- لوغو PUHRUM العملاق المتحرك -->
+        <div class="floating-logo">
+            <h2 class="puhrum-logo">PU<span>H</span>RUM</h2>
+        </div>
+        
+        <!-- شريط التصنيف -->
+        <div class="categories-filter">
+            <button class="filter-btn active" data-category="all">الكل</button>
+            <button class="filter-btn" data-category="culture">ثقافة</button>
+            <button class="filter-btn" data-category="events">أحداث جامعية</button>
+            <button class="filter-btn" data-category="entertainment">ترفيه</button>
+        </div>
+        
+        <!-- خلفية سومرية خفيفة -->
+        <div class="articles-cuneiform-bg">
+            <div class="cuneiform-particle subtle">𒀀</div>
+            <div class="cuneiform-particle subtle">𒁹</div>
+        </div>
+        
+        <div class="articles-grid" id="articlesGrid">
+            <!-- مقال 1 - ثقافة -->
+            <a href="article1.html" class="article-link" data-category="culture">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="جامعة_البصرة.png" alt="جامعة البصرة">
+                        <div class="category-badge culture">ثقافة</div>
+                    </div>
+                    <div class="article-body">
+                        <h3>الذكرى الـ (62) لتأسيس الجامعة</h3>
+                        <p class="excerpt">أسست جامعة البصرة عام 1964 لتكون إحدى أهم الصروح الأكاديمية...</p>
+                        <div class="author">نور حسين</div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- مقال 2 - أحداث جامعية -->
+            <a href="article2.html" class="article-link" data-category="events">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="زرع.jpg" alt="زراعة النخيل">
+                        <div class="category-badge events">أحداث جامعية</div>
+                    </div>
+                    <div class="article-body">
+                        <h3>التغطية الصحفية لموسم زراعة النخيل</h3>
+                        <p class="excerpt">بحضور رئيس قسم هندسة النفط والغاز، الدكتور عمار علي...</p>
+                        <div class="author">نور حسين</div>
+                    </div>
+                </article>
+            </a>
+
+            <!-- مقال 3 - ترفيه -->
+            <a href="article3.html" class="article-link" data-category="entertainment">
+                <article class="article-card">
+                    <div class="article-image">
+                        <img src="أقوال_وحكم_في_نكران_الجميل.jpg" alt="قصة قصيرة">
+                        <div class="category-badge entertainment">ترفيه</div>
+                    </div>
+                    <div class="article-body">
+                        <h3>قصة قصيرة</h3>
+                        <p class="excerpt">ومنْ يصنع المعروفَ في غير أهله ِيلاقي الذي لاقـَى...</p>
+                        <div class="author">نور حسين</div>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- الفوتر -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;جميع الحقوق محفوظة لبيورم2026  </p>
+        </div>
+    </footer>
+
+    <script src="INDEX.JS"></script>
+</body>
+
+</html>
