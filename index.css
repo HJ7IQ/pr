@@ -1383,3 +1383,32 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
         display: none !important;
     }
 }
+
+
+/* حل مشكلة 320px - نص الموقع فقط */
+@media (max-width: 360px) {
+    .container { 
+        padding: 0 12px !important; 
+        max-width: 100% !important;
+    }
+    
+    .articles-grid { 
+        max-width: 100% !important; 
+        margin: 0 !important;
+        padding: 0 8px !important;
+    }
+    
+    .hero-content { 
+        padding: 0 8px !important; 
+        max-width: 100% !important;
+    }
+    
+    .article-card { 
+        margin: 0 4px !important; 
+        min-width: calc(100% - 8px) !important;
+    }
+
+    
+
+
+  
