@@ -1,16 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&display=swap');
 
-:root {
-    --primary: #2563eb;
-    --secondary: #1e40af;
-    --accent: #f59e0b;
-    --dark: #1f2937;
-    --light: #f8fafc;
-    --white: #ffffff;
-    --gray: #6b7280;
-}
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
 body {
@@ -44,7 +34,6 @@ body {
     align-items: center;
 justify-content: center;
 }
-
 
 .logo h1 
 {
@@ -86,7 +75,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     right: 1.5rem;
     width: 0;
     height: 2px;
-    background: linear-gradient(135deg, #000000, #ffffff);
+    background: linear-gradient(135deg, #931916, #ffffff);
     transition: width 0.3s;
 }
 
@@ -97,7 +86,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
 
 .nav-link:hover,
 .nav-link.active {
-    color: #fc0000;
+    color: #931916;
 }
 
 /* Hamburger Menu */
@@ -177,7 +166,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     height: 100%;
     background: linear-gradient(135deg, 
         rgba(0, 0, 0, 0.9)70%, 
-        rgba(253, 0, 0, 0.8) 0%);
+        rgba(255, 255, 255, 0.8) 0%);
     z-index: -1;
     transition: transform 0.1s;
 }
@@ -498,9 +487,9 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     z-index: 1001;
     padding: 8px;
     border-radius: 12px;
-    background: rgba(252,0,0,0.1);
+    background: rgba(99, 65, 65, 0.1);
     backdrop-filter: blur(10px);
-    border: 1px solid rgba(252,0,0,0.2);
+    border: 1px solid rgba(147,25,22,0.2);
     transition: all 0.4s;
     width: 50px;
     height: 50px;
@@ -509,15 +498,15 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 .hamburger:hover {
-    background: rgba(252,0,0,0.2);
+    background: rgba(147,25,22,0.2);
     transform: scale(1.1) rotate(5deg);
-    box-shadow: 0 10px 30px rgba(252,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(147,25,22,0.3);
 }
 
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: linear-gradient(135deg, #fc0000, #000);
+    background: linear-gradient(135deg, #931916);
     border-radius: 2px;
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     transform-origin: center;
@@ -526,7 +515,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
 
 .hamburger.active span:nth-child(1) {
     transform: rotate(45deg) translate(6px, 6px);
-    background: linear-gradient(135deg, #000, #fc0000);
+    background: linear-gradient(135deg, #000, #931916);
 }
 
 .hamburger.active span:nth-child(2) {
@@ -536,19 +525,18 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
 
 .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(6px, -6px);
-    background: linear-gradient(135deg, #000, #fc0000);
+    background: linear-gradient(135deg, #000, #931916);
 }
 
 .cuneiform-icon {
     position: absolute;
     font-size: 24px;
-    color: #fc0000;
+    color: #931916;
     opacity: 0;
     transition: all 0.4s;
     font-family: 'Noto Sans Cuneiform', serif;
     bottom: -5px;
     right: -5px;
-    text-shadow: 0 2px 5px rgba(252,0,0,0.5);
 }
 
 .hamburger:hover .cuneiform-icon,
@@ -576,7 +564,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     z-index: 1002;
     transform: translateX(100%);
     transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    border-left: 4px solid #fc0000;
+    border-left: 4px solid #931916;
     overflow-y: auto;
 }
 
@@ -586,15 +574,15 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     top: 20px;
     right: 30px;
     font-size: 28px;
-    color: rgba(252,0,0,0.3);
+    color: rgba(147,25,22,0.3);
     font-family: 'Noto Sans Cuneiform', serif;
     z-index: 1;
     animation: cuneiformGlow 3s ease-in-out infinite alternate;
 }
 
 @keyframes cuneiformGlow {
-    0% { text-shadow: 0 0 10px rgba(252,0,0,0.3); }
-    100% { text-shadow: 0 0 25px rgba(252,0,0,0.8), 0 0 35px rgba(252,0,0,0.4); }
+    0% { text-shadow: 0 0 10px rgba(147,25,22,0.3); }
+    100% { text-shadow: 0 0 25px rgba(147,25,22,0.8), 0 0 35px rgba(147,25,22,0.4); }
 }
 
 .mobile-menu.active {
@@ -623,7 +611,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     text-decoration: none;
     font-size: 1.15rem;
     font-weight: 600;
-    border-bottom: 1px solid rgba(252,0,0,0.1);
+    border-bottom: 1px solid rgba(147,25,22,0.1);
     transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
     display: flex;
     align-items: center;
@@ -642,7 +630,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     height: 100%;
     background: linear-gradient(90deg, 
         transparent, 
-        rgba(252,0,0,0.15), 
+        rgba(147,25,22,0.15), 
         rgba(0,0,0,0.05));
     transition: width 0.6s ease;
     z-index: 0;
@@ -653,16 +641,16 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
 }
 
 .mobile-menu a:hover {
-    background: linear-gradient(135deg, rgba(252,0,0,0.1), rgba(37,99,235,0.05));
-    color: #fc0000 !important;
+    background: linear-gradient(135deg, rgba(147,25,22,0.1), rgba(37,99,235,0.05));
+    color: #931916 !important;
     padding-right: 4rem;
     transform: translateX(-8px);
-    box-shadow: inset 5px 0 0 #fc0000;
+    box-shadow: inset 5px 0 0 #931916;
 }
 
 .mobile-menu a i {
     font-size: 1.2rem;
-    color: #fc0000;
+    color: #931916;
     width: 24px;
     text-align: center;
     transition: all 0.3s;
@@ -679,7 +667,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
         width: 100vw !important;
         right: 0 !important;
         border-left: none;
-        border-bottom: 4px solid #fc0000;
+        border-bottom: 4px solid #931916;
     }
     
     .hamburger {
@@ -702,21 +690,6 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     50% { transform: scale(1.2); }
     100% { transform: scale(1); }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* أنيميشن النص الراقي - Minimal White/Black */
 .hero-content h1 {
@@ -812,10 +785,7 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     position: absolute;
     font-size: clamp(1.2rem, 3vw, 2.8rem);
     font-family: 'Noto Sans Cuneiform', serif;
-    color: rgba(255,255,255,0.08);
-    text-shadow: 
-        0 0 15px rgba(255,255,255,0.2),
-        0 0 30px rgba(255,255,255,0.1);
+    color: #ffffff;
     animation: cuneiformDrift linear infinite;
     filter: drop-shadow(0 2px 8px rgba(0,0,0,0.5));
 }
@@ -942,19 +912,6 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* قسم المقالات الخارق */
 .articles-section {
     padding: 8rem 0 6rem;
@@ -1029,10 +986,11 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 4rem;
+    margin-bottom: 10rem;
     flex-wrap: wrap;
     position: relative;
     z-index: 3;
+    
 }
 
 .filter-btn {
@@ -1205,12 +1163,6 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
 @media (max-width: 768px) {
     .articles-grid { grid-template-columns: 1fr; gap: 2rem; }
 }
-
-
-
-
-
-
 
 /* طائر سومري مُصحّح - يظهر 100% */
 .news-bird-container {
@@ -1407,8 +1359,89 @@ font-family: "IBM Plex Sans Arabic", sans-serif;
         margin: 0 4px !important; 
         min-width: calc(100% - 8px) !important;
     }
+}
 
+/* ==================== شريط التصنيف UI/UX مثالي ==================== */
+
+/* التصميم الأساسي - داخل البوكس صاعد شوي */
+.categories-filter {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0 3rem 0 !important;
+    flex-wrap: wrap;
+    position: relative !important;
+    z-index: 5 !important;
+    top: 0 !important;
+    background: rgba(255,255,255,0.95) !important;
+    backdrop-filter: blur(25px) !important;
+    padding: 1.5rem 2rem !important;
+    border-radius: 25px !important;
+    box-shadow: 
+        0 20px 60px rgba(0,0,0,0.12),
+        inset 0 1px 0 rgba(255,255,255,0.8) !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    transform: translateY(-20px) !important;
+}
+
+/* شاشات صغيرة */
+@media (max-width: 768px) {
+    .categories-filter {
+        margin: 1.5rem 0 2.5rem 0 !important;
+        padding: 1.2rem 1.5rem !important;
+        gap: 0.8rem !important;
+        transform: translateY(-15px) !important;
+        border-radius: 20px !important;
+    }
     
+    .filter-btn {
+        padding: 10px 18px !important;
+        font-size: 0.9rem !important;
+    }
+}
 
+/* شاشات متوسطة 769px - 1199px */
+@media (min-width: 769px) and (max-width: 1199px) {
+    .categories-filter {
+        margin: 2.5rem 0 3.5rem 0 !important;
+        padding: 1.8rem 2.5rem !important;
+        transform: translateY(-25px) !important;
+        gap: 1.2rem !important;
+    }
+}
 
-  
+/* شاشات كبيرة 1200px+ */
+@media (min-width: 1200px) {
+    .categories-filter { 
+        margin: 3rem 0 4rem 0 !important;
+        padding: 2rem 3rem !important;
+        transform: translateY(-30px) !important;
+        gap: 1.5rem !important;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .filter-btn {
+        padding: 14px 28px !important;
+        font-size: 1rem !important;
+    }
+}
+
+/* تحسين padding لقسم المقالات */
+.articles-section {
+    padding-top: 5rem !important;
+    padding-bottom: 6rem !important;
+}
+
+/* إخفاء sticky تماماً */
+@media (max-width: 900px) {
+    .categories-filter {
+        position: relative !important;
+        top: 0 !important;
+    }
+    
+    .floating-logo {
+        display: none !important;
+    }
+}
